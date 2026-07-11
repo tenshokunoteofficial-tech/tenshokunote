@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>20代におすすめの転職サイト比較【求人広告のプロが本音で解説】</title>
+  <meta name="description" content="求人広告を400本以上書いたライターが、20代におすすめの転職サイトを本音で比較。doda・リクナビNEXT・マイナビ転職の違いを徹底解説します。">
+  <style>
+    :root {
+      --primary: #1a5fb4;
+      --primary-dark: #0d3d7a;
+      --primary-light: #4a90d9;
+      --accent: #e8f0fe;
+      --text: #1e2022;
+      --text-light: #555f6e;
+      --border: #dce3ef;
+      --white: #ffffff;
+      --bg: #f4f7fc;
+      --gold: #f5a623;
+      --silver: #9b9b9b;
+      --bronze: #cd7f32;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    a { color: var(--primary); text-decoration: none; }
+
+    /* ヘッダー */
+    .header {
+      background: var(--primary-dark);
+      padding: 14px 20px;
+      text-align: center;
+    }
+
+    .header-logo {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+    }
+
+    .header-logo span { color: #7ec8e3; }
+
+    /* ヒーロー */
+    .hero {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      color: #fff;
+      padding: 56px 20px 48px;
+      text-align: center;
+    }
+
+    .hero-label {
+      display: inline-block;
+      background: var(--gold);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+      letter-spacing: 0.05em;
+    }
+
+    .hero h1 {
+      font-size: clamp(22px, 4vw, 38px);
+      font-weight: 900;
+      line-height: 1.35;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: #7ec8e3;
+    }
+
+    .hero-sub {
+      font-size: 14px;
+      opacity: 0.88;
+      max-width: 540px;
+      margin: 0 auto 28px;
+    }
+
+    .hero-profile {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.12);
+      border-radius: 40px;
+      padding: 8px 20px;
+      font-size: 13px;
+    }
+
+    .hero-profile-icon {
+      width: 32px;
+      height: 32px;
+      background: #7ec8e3;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+
+    /* セクション共通 */
+    .section {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .section-sub {
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-light);
+      margin-bottom: 32px;
+    }
+
+    /* 信頼バー */
+    .trust-bar {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 20px;
+    }
+
+    .trust-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--text-light);
+      font-weight: 600;
+    }
+
+    .trust-item span { font-size: 16px; }
+
+    /* ランキングカード */
+    .rank-card {
+      background: var(--white);
+      border-radius: 16px;
+      box-shadow: 0 2px 16px rgba(26,95,180,0.10);
+      margin-bottom: 20px;
+      overflow: hidden;
+      border: 2px solid transparent;
+    }
+
+    .rank-card.rank-1 { border-color: var(--gold); }
+    .rank-card.rank-2 { border-color: var(--silver); }
+    .rank-card.rank-3 { border-color: var(--bronze); }
+
+    .rank-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 18px 20px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .rank-badge {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .rank-1 .rank-badge { background: var(--gold); color: #fff; }
+    .rank-2 .rank-badge { background: var(--silver); color: #fff; }
+    .rank-3 .rank-badge { background: var(--bronze); color: #fff; }
+
+    .rank-name { font-size: 20px; font-weight: 800; color: var(--primary-dark); }
+    .rank-catch { font-size: 12px; color: var(--text-light); margin-top: 2px; }
+
+    .rank-body { padding: 16px 20px; }
+
+    .rank-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+
+    .tag {
+      background: var(--accent);
+      color: var(--primary);
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .rank-desc { font-size: 13px; color: var(--text-light); margin-bottom: 14px; line-height: 1.75; }
+
+    .rank-point {
+      background: var(--accent);
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-bottom: 16px;
+      font-size: 13px;
+    }
+
+    .rank-point strong { color: var(--primary-dark); display: block; margin-bottom: 4px; }
+
+    .btn-cta {
+      display: block;
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 700;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn-cta:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-cta.gold { background: var(--gold); }
+    .btn-cta.gold:hover { background: #d4891a; }
+
+    /* プロフィール */
+    .profile-box {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 2px 12px rgba(26,95,180,0.08);
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      margin-bottom: 48px;
+    }
+
+    .profile-icon {
+      width: 64px;
+      height: 64px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      flex-shrink: 0;
+    }
+
+    .profile-name { font-weight: 700; font-size: 16px; margin-bottom: 4px; }
+    .profile-title { font-size: 12px; color: var(--text-light); margin-bottom: 10px; }
+    .profile-text { font-size: 13px; line-height: 1.75; color: var(--text-light); }
+
+    /* 比較表 */
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .compare-table th {
+      background: var(--primary);
+      color: #fff;
+      padding: 10px 12px;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .compare-table th:first-child { text-align: left; }
+
+    .compare-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .compare-table td:first-child { text-align: left; font-weight: 600; }
+    .compare-table tr:nth-child(even) td { background: var(--accent); }
+
+    .check { color: #2e7d32; font-weight: 700; }
+    .cross { color: #c62828; }
+
+    /* こんな人に */
+    .persona-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    .persona-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 2px 8px rgba(26,95,180,0.07);
+      font-size: 13px;
+    }
+
+    .persona-card .icon { font-size: 24px; margin-bottom: 8px; }
+    .persona-card strong { display: block; color: var(--primary-dark); margin-bottom: 4px; }
+
+    /* CTA最終 */
+    .final-cta {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      color: #fff;
+      padding: 48px 20px;
+      text-align: center;
+    }
+
+    .final-cta h2 { font-size: 22px; font-weight: 800; margin-bottom: 10px; }
+    .final-cta p { font-size: 14px; opacity: 0.88; margin-bottom: 28px; }
+
+    .final-cta-buttons {
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btn-white {
+      display: block;
+      background: #fff;
+      color: var(--primary-dark);
+      text-align: center;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .btn-outline {
+      display: block;
+      background: transparent;
+      color: #fff;
+      text-align: center;
+      padding: 13px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      border: 2px solid rgba(255,255,255,0.6);
+    }
+
+    /* フッター */
+    footer {
+      background: var(--primary-dark);
+      color: rgba(255,255,255,0.6);
+      padding: 24px 20px;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    /* 区切り */
+    .divider {
+      border: none;
+      border-top: 2px solid var(--border);
+      margin: 0;
+    }
+
+    @media (max-width: 480px) {
+      .persona-grid { grid-template-columns: 1fr; }
+      .trust-inner { gap: 16px; }
+      .profile-box { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ヘッダー -->
+<div class="header">
+  <div class="header-logo">テンショク<span>ノート</span></div>
+</div>
+
+<!-- ヒーロー -->
+<div class="hero">
+  <div class="hero-label">求人広告400本執筆のプロが監修</div>
+  <h1>20代の転職サイト、<br><em>本音で</em>比較してみた。</h1>
+  <p class="hero-sub">「どれも同じに見える」と思っていませんか？<br>企業側の採用担当と仕事をしてきたからこそ言える、転職サイトの選び方を解説します。</p>
+  <div class="hero-profile">
+    <div class="hero-profile-icon">✍️</div>
+    <span>求人広告ライター歴10年以上 ／ 執筆本数400本超</span>
+  </div>
+</div>
+
+<!-- 信頼バー -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><span>📝</span>求人広告執筆400本+</div>
+    <div class="trust-item"><span>🎯</span>20代転職に特化</div>
+    <div class="trust-item"><span>✅</span>忖度なし本音比較</div>
+  </div>
+</div>
+
+<!-- プロフィール -->
+<div class="section" style="padding-bottom: 0;">
+  <div class="profile-box">
+    <div class="profile-icon">✍️</div>
+    <div>
+      <div class="profile-name">テンショクノート編集長</div>
+      <div class="profile-title">求人広告ライター ／ キャリアアドバイザー歴10年以上</div>
+      <div class="profile-text">求人広告を400本以上執筆してきたライターです。企業の採用担当者と直接やり取りをしてきたからこそ、「求人票に書かれていない本音」「転職サイトを企業側がどう使っているか」を知っています。そのリアルな視点で、20代の転職活動に役立つ情報を発信しています。</div>
+    </div>
+  </div>
+</div>
+
+<!-- ランキング -->
+<div class="section">
+  <h2 class="section-title">20代おすすめ転職サイト<br>正直ランキング</h2>
+  <p class="section-sub">※広告費をもらっているから上位にしているわけではありません。本当に使えると思ったものだけを紹介しています。</p>
+
+  <!-- 1位 -->
+  <div class="rank-card rank-1">
+    <div class="rank-head">
+      <div class="rank-badge">1</div>
+      <div>
+        <div class="rank-name">doda（デューダ）</div>
+        <div class="rank-catch">求人サイト＋エージェントのダブル活用ができる唯一のサービス</div>
+      </div>
+    </div>
+    <div class="rank-body">
+      <div class="rank-tags">
+        <span class="tag">求人数25万件+</span>
+        <span class="tag">エージェント無料</span>
+        <span class="tag">20代◎</span>
+        <span class="tag">未経験OK多数</span>
+      </div>
+      <p class="rank-desc">採用担当者として言わせてもらうと、dodaに掲載している企業は「本気で採用したい」ところが多い印象です。求人票の質が高く、エージェントも的確なマッチングをしてくれます。はじめての転職なら迷わずここを選んでください。</p>
+      <div class="rank-point">
+        <strong>プロ目線のポイント</strong>
+        求人サイトとエージェントが一体化しているのはdodaだけ。「自分で探す」と「プロに紹介してもらう」の両方を同時にできるのは大きなメリット。
+      </div>
+      <a href="#" class="btn-cta gold">dodaに無料登録する（完全無料）→</a>
+    </div>
+  </div>
+
+  <!-- 2位 -->
+  <div class="rank-card rank-2">
+    <div class="rank-head">
+      <div class="rank-badge">2</div>
+      <div>
+        <div class="rank-name">リクナビNEXT</div>
+        <div class="rank-catch">求人数は業界最大級。自分のペースで探したい人向け</div>
+      </div>
+    </div>
+    <div class="rank-body">
+      <div class="rank-tags">
+        <span class="tag">求人数最大級</span>
+        <span class="tag">スカウトあり</span>
+        <span class="tag">強み診断</span>
+      </div>
+      <p class="rank-desc">とにかく求人数が多いので「選択肢を広げたい」ときに有効です。ただし数が多い分、自分で絞り込む手間がかかります。在職中でゆっくり探したい人向き。</p>
+      <div class="rank-point">
+        <strong>プロ目線のポイント</strong>
+        「グッドポイント診断」は採用担当も注目するツール。自分の強みを言語化できると面接でも役立ちます。
+      </div>
+      <a href="#" class="btn-cta">リクナビNEXTに無料登録する →</a>
+    </div>
+  </div>
+
+  <!-- 3位 -->
+  <div class="rank-card rank-3">
+    <div class="rank-head">
+      <div class="rank-badge">3</div>
+      <div>
+        <div class="rank-name">マイナビ転職</div>
+        <div class="rank-catch">第二新卒・未経験転職に最も強いサービス</div>
+      </div>
+    </div>
+    <div class="rank-body">
+      <div class="rank-tags">
+        <span class="tag">第二新卒◎</span>
+        <span class="tag">未経験歓迎多数</span>
+        <span class="tag">使いやすいUI</span>
+      </div>
+      <p class="rank-desc">未経験歓迎の求人数はマイナビが一番充実しています。「異業種に挑戦したい」「とにかく正社員になりたい」という20代にはここが最適です。</p>
+      <div class="rank-point">
+        <strong>プロ目線のポイント</strong>
+        採用担当から見ると、マイナビ経由の応募者は「素直さ・柔軟性」を評価されやすい傾向があります。未経験転職の第一歩にはおすすめ。
+      </div>
+      <a href="#" class="btn-cta">マイナビ転職に無料登録する →</a>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- 比較表 -->
+<div class="section">
+  <h2 class="section-title">一目でわかる比較表</h2>
+  <p class="section-sub">主要3サービスの違いをまとめました</p>
+  <div style="overflow-x:auto;">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>項目</th>
+          <th>doda</th>
+          <th>リクナビNEXT</th>
+          <th>マイナビ転職</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>求人数</td>
+          <td>約25万件</td>
+          <td>約100万件</td>
+          <td>約6万件</td>
+        </tr>
+        <tr>
+          <td>エージェント</td>
+          <td><span class="check">◎ あり</span></td>
+          <td><span class="cross">× なし</span></td>
+          <td><span class="cross">× なし</span></td>
+        </tr>
+        <tr>
+          <td>未経験OK</td>
+          <td><span class="check">◎</span></td>
+          <td><span class="check">○</span></td>
+          <td><span class="check">◎</span></td>
+        </tr>
+        <tr>
+          <td>20代向け</td>
+          <td><span class="check">◎</span></td>
+          <td><span class="check">◎</span></td>
+          <td><span class="check">◎</span></td>
+        </tr>
+        <tr>
+          <td>スカウト機能</td>
+          <td><span class="check">◎</span></td>
+          <td><span class="check">○</span></td>
+          <td><span class="check">○</span></td>
+        </tr>
+        <tr>
+          <td>利用料金</td>
+          <td><span class="check">無料</span></td>
+          <td><span class="check">無料</span></td>
+          <td><span class="check">無料</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- こんな人に -->
+<div class="section">
+  <h2 class="section-title">あなたはどのタイプ？</h2>
+  <p class="section-sub">状況別のおすすめを紹介します</p>
+  <div class="persona-grid">
+    <div class="persona-card">
+      <div class="icon">🌱</div>
+      <strong>はじめての転職</strong>
+      → dodaがおすすめ。エージェントが一から教えてくれます。
+    </div>
+    <div class="persona-card">
+      <div class="icon">🔄</div>
+      <strong>未経験職種に挑戦</strong>
+      → マイナビ転職。未経験歓迎求人が豊富。
+    </div>
+    <div class="persona-card">
+      <div class="icon">⏰</div>
+      <strong>在職中でゆっくり探したい</strong>
+      → リクナビNEXT。自分のペースで探せる。
+    </div>
+    <div class="persona-card">
+      <div class="icon">💰</div>
+      <strong>年収アップを狙いたい</strong>
+      → doda。高年収求人・スカウト機能が充実。
+    </div>
+  </div>
+</div>
+
+<!-- 最終CTA -->
+<div class="final-cta">
+  <h2>まずは無料登録だけでOK</h2>
+  <p>登録は5分。求人を見るだけでもOKです。<br>「転職するかどうか迷っている」段階でも、市場を知るために動いておくことが大事です。</p>
+  <div class="final-cta-buttons">
+    <a href="#" class="btn-white">dodaに無料登録する →</a>
+    <a href="#" class="btn-outline">リクナビNEXTに無料登録する →</a>
+    <a href="#" class="btn-outline">マイナビ転職に無料登録する →</a>
+  </div>
+</div>
+
+<footer>
+  <p style="margin-bottom:8px;">※当サイトはアフィリエイトプログラムに参加しています。リンク経由で登録・申込があった場合、サイト運営者に報酬が発生することがあります。</p>
+  <p>© 2026 テンショクノート</p>
+</footer>
+
+</body>
+</html>
