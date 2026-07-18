@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>光回線おすすめ比較【2026年最新】工事不要のWiMAXも徹底解説</title>
+  <meta name="description" content="ソフトバンク光・ドコモ光・GMOとくとくBB光・WiMAXを徹底比較。月額料金・速度・キャッシュバックをわかりやすく解説します。">
+  <style>
+    :root {
+      --primary: #0a3d7a;
+      --primary-mid: #1a5fb4;
+      --primary-light: #4a90d9;
+      --accent: #e8f0fe;
+      --text: #1e2022;
+      --text-light: #555f6e;
+      --border: #dce3ef;
+      --white: #ffffff;
+      --bg: #f4f7fc;
+      --gold: #f5a623;
+      --green: #2e7d32;
+      --red: #c62828;
+
+      --sb: #ee1122;
+      --docomo: #e60012;
+      --gmo: #1976d2;
+      --wimax: #e65100;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    a { color: var(--primary-mid); text-decoration: none; }
+
+    /* ヘッダー */
+    .header {
+      background: var(--primary);
+      padding: 14px 20px;
+      text-align: center;
+    }
+    .header-logo { color: #fff; font-size: 18px; font-weight: 800; }
+    .header-logo span { color: #7ec8e3; }
+
+    /* ヒーロー */
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 100%);
+      color: #fff;
+      padding: 52px 20px 44px;
+      text-align: center;
+    }
+    .hero-label {
+      display: inline-block;
+      background: var(--gold);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+    .hero h1 {
+      font-size: clamp(22px, 4vw, 36px);
+      font-weight: 900;
+      line-height: 1.35;
+      margin-bottom: 14px;
+    }
+    .hero h1 em { font-style: normal; color: #7ec8e3; }
+    .hero-sub {
+      font-size: 14px;
+      opacity: 0.88;
+      max-width: 560px;
+      margin: 0 auto 28px;
+    }
+    .hero-scroll {
+      font-size: 13px;
+      opacity: 0.7;
+      animation: bounce 1.5s infinite;
+    }
+    @keyframes bounce {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(4px); }
+    }
+
+    /* 信頼バー */
+    .trust-bar {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 20px;
+    }
+    .trust-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--text-light);
+      font-weight: 600;
+    }
+
+    /* セクション */
+    .section {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 44px 20px;
+    }
+    .section-title {
+      font-size: 21px;
+      font-weight: 800;
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 6px;
+    }
+    .section-sub {
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-light);
+      margin-bottom: 28px;
+    }
+
+    /* ランキングカード */
+    .rank-card {
+      background: var(--white);
+      border-radius: 16px;
+      box-shadow: 0 2px 16px rgba(26,95,180,0.10);
+      margin-bottom: 20px;
+      overflow: hidden;
+      border: 2px solid transparent;
+    }
+    .rank-card.no1 { border-color: var(--gold); }
+    .rank-card.no2 { border-color: #9b9b9b; }
+    .rank-card.no3 { border-color: #cd7f32; }
+    .rank-card.no4 { border-color: var(--primary-light); }
+
+    .rank-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 20px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    .rank-badge {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 18px;
+      flex-shrink: 0;
+      color: #fff;
+    }
+    .no1 .rank-badge { background: var(--gold); }
+    .no2 .rank-badge { background: #9b9b9b; }
+    .no3 .rank-badge { background: #cd7f32; }
+    .no4 .rank-badge { background: var(--primary-light); }
+
+    .rank-name { font-size: 19px; font-weight: 800; color: var(--primary); }
+    .rank-catch { font-size: 12px; color: var(--text-light); margin-top: 2px; }
+
+    .rank-body { padding: 16px 20px; }
+
+    .rank-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    .tag {
+      background: var(--accent);
+      color: var(--primary-mid);
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .tag-red { background: #fdecea; color: var(--red); }
+    .tag-green { background: #e8f5e9; color: var(--green); }
+
+    .price-box {
+      background: var(--accent);
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .price-label { font-size: 12px; color: var(--text-light); }
+    .price-num { font-size: 24px; font-weight: 900; color: var(--primary); }
+    .price-unit { font-size: 13px; color: var(--text-light); }
+    .price-cb { font-size: 13px; color: var(--red); font-weight: 700; margin-left: auto; }
+
+    .rank-desc { font-size: 13px; color: var(--text-light); margin-bottom: 14px; line-height: 1.75; }
+
+    .point-box {
+      background: #f9f9f9;
+      border-left: 4px solid var(--primary-mid);
+      border-radius: 0 8px 8px 0;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+      font-size: 13px;
+    }
+    .point-box strong { color: var(--primary); display: block; margin-bottom: 3px; }
+
+    .btn-cta {
+      display: block;
+      background: var(--primary-mid);
+      color: #fff;
+      text-align: center;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 700;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-cta:hover { background: var(--primary); transform: translateY(-1px); }
+    .btn-gold { background: var(--gold); }
+    .btn-gold:hover { background: #d4891a; }
+
+    /* 比較表 */
+    .compare-wrap { overflow-x: auto; margin-bottom: 8px; }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      min-width: 500px;
+    }
+    .compare-table th {
+      background: var(--primary);
+      color: #fff;
+      padding: 10px 12px;
+      text-align: center;
+      font-size: 12px;
+    }
+    .compare-table th:first-child { text-align: left; min-width: 100px; }
+    .compare-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+      font-size: 12px;
+      vertical-align: middle;
+    }
+    .compare-table td:first-child { text-align: left; font-weight: 600; }
+    .compare-table tr:nth-child(even) td { background: var(--accent); }
+    .check { color: var(--green); font-weight: 700; }
+    .cross { color: var(--red); }
+    .best { color: var(--gold); font-weight: 700; }
+
+    /* こんな人に */
+    .persona-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 0;
+    }
+    .persona-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 2px 8px rgba(26,95,180,0.07);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .persona-card .icon { font-size: 24px; margin-bottom: 8px; }
+    .persona-card strong { display: block; color: var(--primary); margin-bottom: 4px; font-size: 14px; }
+
+    /* Q&A */
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 16px 40px 16px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--primary);
+      cursor: pointer;
+      position: relative;
+    }
+    .faq-q::after {
+      content: '+';
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      color: var(--primary-mid);
+    }
+    .faq-q.open::after { content: '−'; }
+    .faq-a {
+      display: none;
+      padding: 0 16px 16px;
+      font-size: 13px;
+      color: var(--text-light);
+      line-height: 1.8;
+    }
+    .faq-a.open { display: block; }
+
+    /* 最終CTA */
+    .final-cta {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 100%);
+      color: #fff;
+      padding: 48px 20px;
+      text-align: center;
+    }
+    .final-cta h2 { font-size: 22px; font-weight: 800; margin-bottom: 10px; }
+    .final-cta p { font-size: 14px; opacity: 0.88; margin-bottom: 28px; }
+    .final-btns {
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .btn-white {
+      display: block;
+      background: #fff;
+      color: var(--primary);
+      text-align: center;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .btn-outline {
+      display: block;
+      background: transparent;
+      color: #fff;
+      text-align: center;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      border: 2px solid rgba(255,255,255,0.55);
+    }
+
+    /* フッター */
+    footer {
+      background: var(--primary);
+      color: rgba(255,255,255,0.6);
+      padding: 24px 20px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    hr.divider { border: none; border-top: 2px solid var(--border); }
+
+    @media (max-width: 480px) {
+      .persona-grid { grid-template-columns: 1fr; }
+      .trust-inner { gap: 14px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-logo">光回線<span>比較ナビ</span></div>
+</div>
+
+<div class="hero">
+  <div class="hero-label">2026年7月最新版</div>
+  <h1>光回線、<em>正直に</em>比較してみた。<br>あなたに合う1本が見つかる。</h1>
+  <p class="hero-sub">ソフトバンク光・ドコモ光・GMOとくとくBB光・WiMAXを月額料金・速度・キャッシュバックで徹底比較。どれが本当にお得か、忖度なしで解説します。</p>
+  <div class="hero-scroll">▼ 比較を見る</div>
+</div>
+
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item">📋 4サービス徹底比較</div>
+    <div class="trust-item">💰 キャッシュバック情報あり</div>
+    <div class="trust-item">✅ 忖度なし本音レビュー</div>
+  </div>
+</div>
+
+<!-- ランキング -->
+<div class="section">
+  <h2 class="section-title">光回線おすすめランキング</h2>
+  <p class="section-sub">月額料金・速度・特典をトータルで評価しました</p>
+
+  <!-- 1位 ソフトバンク光 -->
+  <div class="rank-card no1">
+    <div class="rank-head">
+      <div class="rank-badge">1</div>
+      <div>
+        <div class="rank-name">ソフトバンク光</div>
+        <div class="rank-catch">ソフトバンク・ワイモバイルユーザーなら月最大1,100円引き</div>
+      </div>
+    </div>
+    <div class="rank-body">
+      <div class="rank-tags">
+        <span class="tag">SB・Y!mobile割引</span>
+        <span class="tag">セット割最強</span>
+        <span class="tag">速度安定</span>
+      </div>
+      <div class="price-box">
+        <span class="price-label">月額</span>
+        <span class="price-num">5,720</span>
+        <span class="price-unit">円〜（戸建て）</span>
+        <span class="price-cb">🎁 最大40,000円CB</span>
+      </div>
+      <p class="rank-desc">スマホがソフトバンクまたはワイモバイルなら「おうち割 光セット」で月最大1,100円の割引が適用されます。セット割を使えば実質的なコストはトップクラスに安くなります。キャッシュバックも最大40,000円と高水準です。</p>
+      <div class="point-box">
+        <strong>ここがポイント</strong>
+        ソフトバンク・ワイモバイルユーザー限定でお得度が跳ね上がります。スマホとセットで考えると月々の通信費をまとめて削減できます。
+      </div>
+      <a href="#" class="btn-cta btn-gold">ソフトバンク光に申し込む →</a>
+    </div>
+  </div>
+
+  <!-- 2位 ドコモ光 -->
+  <div class="rank-card no2">
+    <div class="rank-head">
+      <div class="rank-badge">2</div>
+      <div>
+        <div class="rank-name">ドコモ光</div>
+        <div class="rank-catch">ドコモユーザーならdポイントが毎月貯まる</div>
+      </div>
+    </div>
+    <div class="rank-body">
+      <div class="rank-tags">
+        <span class="tag">ドコモ割引</span>
+        <span class="tag">dポイント還元</span>
+        <span class="tag">安定した速度</span>
+      </div>
+      <div class="price-box">
+        <span class="price-label">月額</span>
+        <span class="price-num">5,720</span>
+        <span class="price-unit">円〜（戸建て）</span>
+        <span class="price-cb">🎁 最大13,000円CB</span>
+      </div>
+      <p class="rank-desc">ドコモスマホとのセット割「home with」で月最大1,100円引き。さらにdポイントが毎月付与されるので、ドコモユーザーにとってはトータルコストを抑えやすいサービスです。</p>
+      <div class="point-box">
+        <strong>ここがポイント</strong>
+        dポイントをよく使う方には相性が良いです。ドコモ経済圏の方には最も使いやすい光回線の選択肢です。
+      </div>
+      <a href="#" class="btn-cta">ドコモ光に申し込む →</a>
+    </div>
+  </div>
+
+  <!-- 3位 WiMAX -->
+  <div class="rank-card no3">
+    <div class="rank-head">
+      <div class="rank-badge">3</div>
+      <div>
+        <div class="rank-name">WiMAX（BIGLOBE WiMAX +5G）</div>
+        <div class="rank-catch">工事不要・持ち運びOK・賃貸でもすぐ使える</div>
+      </div>
+    </div>
+    <div class="rank-body">
+      <div class="rank-tags">
+        <span class="tag-red tag">工事不要</span>
+        <span class="tag">持ち運びOK</span>
+        <span class="tag">賃貸◎</span>
+        <span class="tag">最短即日</span>
+      </div>
+      <div class="price-box">
+        <span class="price-label">月額</span>
+        <span class="price-num">4,818</span>
+        <span class="price-unit">円〜</span>
+        <span class="price-cb">🎁 申込5,000円CB</span>
+      </div>
+      <p class="rank-desc">光回線の工事が不要で、申し込み後すぐに使えるのが最大の強み。賃貸で工事ができない方、引っ越しが多い方、外でもWi-Fiを使いたい方に向いています。ただし固定回線と比べると速度は落ちることがあります。</p>
+      <div class="point-box">
+        <strong>ここがポイント</strong>
+        「今すぐネットを使いたい」「工事の日程調整が面倒」という方の最適解。光回線の代替として十分実用的な速度が出ます。
+      </div>
+      <a href="#" class="btn-cta">WiMAXに申し込む →</a>
+    </div>
+  </div>
+
+  <!-- 参考：GMOとくとくBB光 -->
+  <div style="background:var(--white); border-radius:12px; padding:16px 20px; box-shadow:0 2px 8px rgba(26,95,180,0.07); margin-bottom:20px; border: 1px solid var(--border);">
+    <div style="font-size:12px; color:var(--text-light); margin-bottom:8px;">参考：比較対象</div>
+    <div style="font-size:17px; font-weight:800; color:var(--primary); margin-bottom:6px;">GMOとくとくBB光</div>
+    <div class="rank-tags" style="margin-bottom:10px;">
+      <span class="tag-green tag">確定率72%</span>
+      <span class="tag">最大60,000円CB</span>
+      <span class="tag">月額4,928円〜</span>
+    </div>
+    <p style="font-size:13px; color:var(--text-light);">キャッシュバック額・確定率ともに高水準。ただし当サイト経由でのお申し込みは現在対応しておりません。公式サイトからご確認ください。</p>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- 比較表 -->
+<div class="section">
+  <h2 class="section-title">4サービス 一目比較表</h2>
+  <p class="section-sub">主要スペックをまとめました</p>
+  <div class="compare-wrap">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>項目</th>
+          <th>GMOとくとくBB光</th>
+          <th>ソフトバンク光</th>
+          <th>ドコモ光</th>
+          <th>WiMAX</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>月額（戸建て）</td>
+          <td>4,928円〜</td>
+          <td>5,720円〜</td>
+          <td>5,720円〜</td>
+          <td>4,818円〜</td>
+        </tr>
+        <tr>
+          <td>工事</td>
+          <td>必要</td>
+          <td>必要</td>
+          <td>必要</td>
+          <td><span class="best">不要</span></td>
+        </tr>
+        <tr>
+          <td>キャッシュバック</td>
+          <td><span class="best">最大60,000円</span></td>
+          <td>最大40,000円</td>
+          <td>最大13,000円</td>
+          <td>5,000円</td>
+        </tr>
+        <tr>
+          <td>スマホ割引</td>
+          <td><span class="cross">×</span></td>
+          <td><span class="check">SB・Y!mobile</span></td>
+          <td><span class="check">ドコモ</span></td>
+          <td><span class="cross">×</span></td>
+        </tr>
+        <tr>
+          <td>持ち運び</td>
+          <td><span class="cross">×</span></td>
+          <td><span class="cross">×</span></td>
+          <td><span class="cross">×</span></td>
+          <td><span class="check">◎</span></td>
+        </tr>
+        <tr>
+          <td>速度の安定感</td>
+          <td><span class="check">◎</span></td>
+          <td><span class="check">◎</span></td>
+          <td><span class="check">◎</span></td>
+          <td>○</td>
+        </tr>
+        <tr>
+          <td>おすすめ対象</td>
+          <td>誰でも</td>
+          <td>SB・Y!mobileユーザー</td>
+          <td>ドコモユーザー</td>
+          <td>賃貸・引越し多い方</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- こんな人に -->
+<div class="section">
+  <h2 class="section-title">あなたはどのタイプ？</h2>
+  <p class="section-sub">状況別のおすすめを紹介します</p>
+  <div class="persona-grid">
+    <div class="persona-card">
+      <div class="icon">💰</div>
+      <strong>とにかくお得に使いたい</strong>
+      → GMOとくとくBB光。キャッシュバック最大60,000円。
+    </div>
+    <div class="persona-card">
+      <div class="icon">📱</div>
+      <strong>ソフトバンク・Y!mobileユーザー</strong>
+      → ソフトバンク光一択。セット割で月1,100円引き。
+    </div>
+    <div class="persona-card">
+      <div class="icon">🔴</div>
+      <strong>ドコモユーザー</strong>
+      → ドコモ光。dポイント還元でさらにお得。
+    </div>
+    <div class="persona-card">
+      <div class="icon">🏠</div>
+      <strong>賃貸・工事したくない</strong>
+      → WiMAX。申し込み翌日から使えます。
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- FAQ -->
+<div class="section">
+  <h2 class="section-title">よくある質問</h2>
+  <p class="section-sub" style="margin-bottom:20px;"></p>
+  <div style="background:var(--white); border-radius:12px; box-shadow:0 2px 12px rgba(26,95,180,0.08); overflow:hidden;">
+    <div class="faq-item">
+      <button class="faq-q">光回線とWiMAXはどう違うの？</button>
+      <div class="faq-a">光回線は自宅に光ファイバーケーブルを引き込む固定回線です。速度が安定していますが工事が必要です。WiMAXはモバイル回線を使うWi-Fiルーターで、工事不要・持ち運び可能ですが、光回線に比べると速度が落ちる場合があります。</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">キャッシュバックは必ずもらえる？</button>
+      <div class="faq-a">受け取り条件を満たせばもらえます。ただし「申請が必要」「特定の期間内に手続きが必要」など条件があるサービスが多いです。GMOとくとくBBは条件がシンプルで確定率が高いため、確実に受け取りやすいです。</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">賃貸でも光回線は使える？</button>
+      <div class="faq-a">多くの賃貸マンションでは使えますが、工事の許可が必要な場合があります。工事が難しい場合はWiMAXが最適解です。マンション全体に光回線が引かれている場合は工事不要で使えることもあります。</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">スマホとセットにしないとダメ？</button>
+      <div class="faq-a">セットにしなくても申し込めます。ただしソフトバンク光・ドコモ光はスマホとセットにすることで月1,100円の割引が受けられるため、対象スマホをお持ちなら積極的に活用しましょう。セット割なしならGMOとくとくBB光が最もコスパが高いです。</div>
+    </div>
+  </div>
+</div>
+
+<!-- 最終CTA -->
+<div class="final-cta">
+  <h2>迷ったらGMOとくとくBB光</h2>
+  <p>キャッシュバック最大60,000円・確定率72%。<br>スマホの種類を問わず誰でもお得に使えます。</p>
+  <div class="final-btns">
+    <a href="#" class="btn-white">GMOとくとくBB光に申し込む →</a>
+    <a href="#" class="btn-outline">ソフトバンク光に申し込む →</a>
+    <a href="#" class="btn-outline">ドコモ光に申し込む →</a>
+    <a href="#" class="btn-outline">WiMAXに申し込む →</a>
+  </div>
+</div>
+
+<footer>
+  <p>※当サイトはアフィリエイトプログラムに参加しています。リンク経由で申し込みがあった場合、サイト運営者に報酬が発生することがあります。</p>
+  <p style="margin-top:6px;">※料金・キャッシュバック額は2026年7月時点の情報です。最新情報は各公式サイトをご確認ください。</p>
+  <p style="margin-top:6px;">© 2026 テンショクノート</p>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('open');
+    btn.nextElementSibling.classList.toggle('open');
+  });
+});
+</script>
+
+</body>
+</html>
